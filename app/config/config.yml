@@ -1,10 +1,16 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
+    - { resource: services.yml }
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+parameters:
+    locale: en
 
 framework:
     #esi:             ~
-    #translator:      { fallback: "%locale%" }
+    #translator:      { fallbacks: ["%locale%"] }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -12,6 +18,7 @@ framework:
     form:            ~
     csrf_protection: ~
     validation:      { enable_annotations: true }
+    #serializer:      { enable_annotations: true }
     templating:
         engines: ['twig']
         #assets_version: SomeVersionScheme
@@ -33,7 +40,7 @@ twig:
 assetic:
     debug:          "%kernel.debug%"
     use_controller: false
-    bundles:        [CmfCreateBundle]
+    bundles:        [ ]
     #java: /usr/bin/java
     filters:
         cssrewrite: ~
@@ -42,63 +49,27 @@ assetic:
         #yui_css:
         #    jar: "%kernel.root_dir%/Resources/java/yuicompressor-2.4.7.jar"
 
-# Doctrine Configuration (needed for Jackalope Doctrine DBAL)
+# Doctrine Configuration
 doctrine:
     dbal:
-        driver:   "%database_driver%"
+        driver:   pdo_mysql
         host:     "%database_host%"
         port:     "%database_port%"
         dbname:   "%database_name%"
         user:     "%database_user%"
         password: "%database_password%"
         charset:  UTF8
-        path:     "%database_path%"
+        # if using pdo_sqlite as your database driver:
+        #   1. add the path in parameters.yml
+        #     e.g. database_path: "%kernel.root_dir%/data/data.db3"
+        #   2. Uncomment database_path in parameters.yml.dist
+        #   3. Uncomment next line:
+        #     path:     "%database_path%"
 
-# Doctrine PHPCR-ODM configuration
-doctrine_phpcr:
-    session:
-        backend: "%phpcr_backend%"
-        workspace: "%phpcr_workspace%"
-        username: "%phpcr_user%"
-        password: "%phpcr_password%"
-    odm:
-        auto_mapping: true
+    orm:
         auto_generate_proxy_classes: "%kernel.debug%"
-
-# Jackalope Metadata and Node Cache services
-doctrine_cache:
-    providers:
-        phpcr_meta:
-            type: file_system
-        phpcr_nodes:
-            type: file_system
-
-# Cmf Configuration
-cmf_core:
-    persistence:
-        phpcr: true
-        # if you want another basepath
-        # basepath: /custom/basepath
-    publish_workflow: false
-
-# Cmf Routing Configuration
-cmf_routing:
-    dynamic:
-        templates_by_class:
-            Symfony\Cmf\Bundle\SimpleCmsBundle\Doctrine\Phpcr\Page: AcmeDemoBundle:Page:index.html.twig
-
-# Menu Configuration
-knp_menu:
-    twig: true
-
-sonata_block:
-    default_contexts: [cms]
-
-# Cmf Create Configuration
-fos_rest:
-    view:
-        formats:
-            json: true
+        naming_strategy: doctrine.orm.naming_strategy.underscore
+        auto_mapping: true
 
 # Swiftmailer Configuration
 swiftmailer:
