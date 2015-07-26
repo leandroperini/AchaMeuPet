@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>New</source>
+                <target>Novo</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>Edit</source>
+                <target>Editar</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>Delete</source>
+                <target>Remover</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>List</source>
+                <target>Listar</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>Save</source>
+                <target>Salvar</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>Save and add</source>
+                <target>Salvar e Adicionar outro</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>Cancel</source>
+                <target>Cancelar</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>Choose an action</source>
+                <target>Escolha uma opção</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>go</source>
+                <target>ir</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>Actions</source>
+                <target>Ações</target>
+            </trans-unit>
+            <!--  Filters  -->
+            <trans-unit id="14">
+                <source>Reset</source>
+                <target>Limpar</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>Filter</source>
+                <target>Filtrar</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>is empty</source>
+                <target>Vazio</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>from</source>
+                <target>De</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>to</source>
+                <target>até</target>
+            </trans-unit>
+            <!--  List  -->
+            <trans-unit id="19">
+                <source>No result</source>
+                <target>Nenhum resultado.</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>Actions</source>
+                <target>Ações</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>(page %%page%%/%%nb_pages%%)</source>
+                <target>(página %%page%%/%%nb_pages%%)</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>asc</source>
+                <target>asc</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>desc</source>
+                <target>desc</target>
+            </trans-unit>
+            <!--  Pagination  -->
+            <trans-unit id="24">
+                <source>First page</source>
+                <target>Primeira página</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>Previous page</source>
+                <target>Página anterior</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>Next page</source>
+                <target>Próxima página</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>Last page</source>
+                <target>Última página</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>1 result</source>
+                <target>1 resultado encontrado</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>results</source>
+                <target>resultados encontrados</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>[0] no result|[1] 1 result|(1,+Inf] %1% results</source>
+                <target>
+                    [0] sem resultado|[1] 1 resultado|(1,+Inf] %1% resultados
+                </target>
+            </trans-unit>
+            <!--  Form  -->
+            <trans-unit id="31">
+                <source>The item was created successfully.</source>
+                <target>Item adicionado com sucesso.</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>The item was updated successfully.</source>
+                <target>Item atualizado com sucesso.</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>
+                    The item was created successfully. You can add another one below.
+                </source>
+                <target>
+                    Item adicionado com sucesso. Você pode adicionar outro abaixo.
+                </target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>
+                    The item was updated successfully. You can add another one below.
+                </source>
+                <target>
+                    Item atualizado com sucesso. Você pode adicionar outro abaixo.
+                </target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source>The item has not been saved due to some errors.</source>
+                <target>Item não atualizado devido a erros.</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>The item was deleted successfully.</source>
+                <target>Item removido com sucesso.</target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source>The item was deleted successfully.</source>
+                <target>Ítem excluído com sucesso.</target>
+            </trans-unit>
+            <trans-unit id="38">
+                <source>You must at least select one item.</source>
+                <target>Você deve selecionar pelo menos um ítem.</target>
+            </trans-unit>
+            <trans-unit id="39">
+                <source>
+                    You must select an action to execute on the selected items.
+                </source>
+                <target>
+                    Você deve selecionar uma ação a ser executada nos ítens selecionados.
+                </target>
+            </trans-unit>
+            <trans-unit id="40">
+                <source>
+                    A problem occurs when deleting the selected items as some items do not exist anymore.
+                </source>
+                <target>
+                    Ocorreu um problema ao excluir os ítens selecionados pois alguns deles não existem mais.
+                </target>
+            </trans-unit>
+            <trans-unit id="41">
+                <source>The selected items have been deleted successfully.</source>
+                <target>Os ítens selecionados foram excluídos com sucesso.</target>
+            </trans-unit>
+            <trans-unit id="42">
+                <source>A problem occurs when deleting the selected items.</source>
+                <target>
+                    Ocorreu um problema ao deletar os ítens selecionados.
+                </target>
+            </trans-unit>
+            <trans-unit id="43">
+                <source>Defined messages</source>
+                <target>Mensagens definidas.</target>
+            </trans-unit>
+            <trans-unit id="44">
+                <source>Login</source>
+                <target>Entrar</target>
+            </trans-unit>
+            <trans-unit id="Learn more">
+                <source>Learn more</source>
+                <target>Saiba mais</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

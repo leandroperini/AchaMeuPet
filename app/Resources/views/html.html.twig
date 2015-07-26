@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block pageTitle %}Acha Meu Pet!{% endblock %}</title>
+        <link rel="icon" href="{{ asset('bundles/achameupetachameupetcore/images/favicon.ico') }}">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.css') }}">
+
+        {#        <link rel="stylesheet" href="{{ asset('bundles/achameupetachameupetcore/css/base.css') }}">#}
+    </head>
+    <body>
+
+        <div class="site-wrapper">
+
+            <div class="site-wrapper-inner">
+
+                <div class="cover-container">
+                    {% block body %}
+                        {{ include('default/header.html.twig') }}
+                        {% block content %}
+                            <p>Site Content Goes Here block content</p>                            
+                        {% endblock %}
+                        {{ include('default/footer.html.twig') }}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{{ asset('bootstrap/js/jquery.js') }}"><\/script>')</script>
+        <script src="{{ asset('bootstrap/js/bootstrap.js') }}"></script>        
+    </body>
+</html>
