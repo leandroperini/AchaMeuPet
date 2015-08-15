@@ -1,0 +1,17 @@
+'AchaMeuPet\CoreBundle\Entity\ Post':
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        body:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

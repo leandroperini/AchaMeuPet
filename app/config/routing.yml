@@ -3,7 +3,7 @@ app:
     type:     annotation
     
 acha_meu_pet_acha_meu_pet_core:
-    resource: "@AchaMeuPetAchaMeuPetCoreBundle/Resources/config/routing.yml"
+    resource: "@AchaMeuPetCoreBundle/Resources/config/routing.yml"
     prefix:   /
     
 fos_user:

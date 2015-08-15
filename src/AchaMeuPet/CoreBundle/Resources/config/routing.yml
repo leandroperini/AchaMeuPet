@@ -1,5 +1,5 @@
 acha_meu_pet_acha_meu_pet_core_homepage:
     path:     /
     defaults:
-        _controller: AchaMeuPetAchaMeuPetCoreBundle:Default:index
+        _controller: AchaMeuPetCoreBundle:Default:index
         

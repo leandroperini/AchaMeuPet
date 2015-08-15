@@ -1,9 +1,13 @@
 # Learn more about services, parameters and containers at
 # http://symfony.com/doc/current/book/service_container.html
 parameters:
-#    parameter_name: value
+    owl.provider.oauth.class: Owl\UserBundle\Security\User\Provider\OAuthUserProvider
+    owl.user_manager.class: Owl\UserBundle\Doctrine\UserManager
 
 services:
-#    service_name:
-#        class: AppBundle\Directory\ClassName
-#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+    owl.provider.oauth:
+        class: %owl.provider.oauth.class%
+        arguments: ['@fos_user.user_manager', { facebook: oauthId, github: oauthId }]
+    owl.user_manager:
+        class: %owl.user_manager.class%
+        arguments: ['@security.encoder_factory', '@fos_user.util.username_canonicalizer', '@fos_user.util.email_canonicalizer', '@fos_user.entity_manager', '%fos_user.model.user.class%']

@@ -1,6 +1,6 @@
 <?php
 
-namespace AchaMeuPet\AchaMeuPet\CoreBundle\Controller;
+namespace AchaMeuPet\CoreBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('AchaMeuPetAchaMeuPetCoreBundle:Default:index.html.twig');
+        return $this->render('AchaMeuPetCoreBundle:Default:index.html.twig');
     }
 }

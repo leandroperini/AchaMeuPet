@@ -1,6 +1,6 @@
 <?php
 
-namespace AchaMeuPet\AchaMeuPet\CoreBundle\Tests\Controller;
+namespace AchaMeuPet\CoreBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

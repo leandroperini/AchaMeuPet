@@ -99,7 +99,7 @@ swiftmailer:
 fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
-    user_class: AchaMeuPet\AchaMeuPet\CoreBundle\Entity\User
+    user_class: AchaMeuPet\CoreBundle\Entity\User
     
 hwi_oauth:
     firewall_name: secured_area
