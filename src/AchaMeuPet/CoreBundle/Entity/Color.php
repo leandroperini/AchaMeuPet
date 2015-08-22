@@ -5,9 +5,9 @@ namespace AchaMeuPet\CoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- *  Post
+ * Color
  */
-class Post
+class Color
 {
     /**
      * @var integer
@@ -17,12 +17,12 @@ class Post
     /**
      * @var string
      */
-    private $title;
+    private $name;
 
     /**
      * @var string
      */
-    private $body;
+    private $hexCode;
 
 
     /**
@@ -36,48 +36,48 @@ class Post
     }
 
     /**
-     * Set title
+     * Set name
      *
-     * @param string $title
-     * @return Post
+     * @param string $name
+     * @return Color
      */
-    public function setTitle($title)
+    public function setName($name)
     {
-        $this->title = $title;
+        $this->name = $name;
 
         return $this;
     }
 
     /**
-     * Get title
+     * Get name
      *
      * @return string 
      */
-    public function getTitle()
+    public function getName()
     {
-        return $this->title;
+        return $this->name;
     }
 
     /**
-     * Set body
+     * Set hexCode
      *
-     * @param string $body
-     * @return Post
+     * @param string $hexCode
+     * @return Color
      */
-    public function setBody($body)
+    public function setHexCode($hexCode)
     {
-        $this->body = $body;
+        $this->hexCode = $hexCode;
 
         return $this;
     }
 
     /**
-     * Get body
+     * Get hexCode
      *
      * @return string 
      */
-    public function getBody()
+    public function getHexCode()
     {
-        return $this->body;
+        return $this->hexCode;
     }
 }

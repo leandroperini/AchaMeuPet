@@ -1,0 +1,30 @@
+breed:
+    path:     /
+    defaults: { _controller: "AchaMeuPetCoreBundle:Breed:index" }
+
+breed_show:
+    path:     /{id}/show
+    defaults: { _controller: "AchaMeuPetCoreBundle:Breed:show" }
+
+breed_new:
+    path:     /new
+    defaults: { _controller: "AchaMeuPetCoreBundle:Breed:new" }
+
+breed_create:
+    path:     /create
+    defaults: { _controller: "AchaMeuPetCoreBundle:Breed:create" }
+    methods:  POST
+
+breed_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AchaMeuPetCoreBundle:Breed:edit" }
+
+breed_update:
+    path:     /{id}/update
+    defaults: { _controller: "AchaMeuPetCoreBundle:Breed:update" }
+    methods:  [POST, PUT]
+
+breed_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AchaMeuPetCoreBundle:Breed:delete" }
+    methods:  [POST, DELETE]

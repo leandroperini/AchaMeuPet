@@ -1,0 +1,4 @@
+AchaMeuPet\CoreBundle\Entity\Breed:
+    image:
+        mapping:           breed_picture
+        filename_property: picture

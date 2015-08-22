@@ -1,0 +1,30 @@
+pet:
+    path:     /
+    defaults: { _controller: "AchaMeuPetCoreBundle:Pet:index" }
+
+pet_show:
+    path:     /{id}/show
+    defaults: { _controller: "AchaMeuPetCoreBundle:Pet:show" }
+
+pet_new:
+    path:     /new
+    defaults: { _controller: "AchaMeuPetCoreBundle:Pet:new" }
+
+pet_create:
+    path:     /create
+    defaults: { _controller: "AchaMeuPetCoreBundle:Pet:create" }
+    methods:  POST
+
+pet_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AchaMeuPetCoreBundle:Pet:edit" }
+
+pet_update:
+    path:     /{id}/update
+    defaults: { _controller: "AchaMeuPetCoreBundle:Pet:update" }
+    methods:  [POST, PUT]
+
+pet_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AchaMeuPetCoreBundle:Pet:delete" }
+    methods:  [POST, DELETE]

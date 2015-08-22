@@ -1,3 +1,23 @@
+acha_meu_pet_core_pet:
+    resource: "@AchaMeuPetCoreBundle/Resources/config/routing/pet.yml"
+    prefix:   /pet
+
+acha_meu_pet_core_image:
+    resource: "@AchaMeuPetCoreBundle/Resources/config/routing/image.yml"
+    prefix:   /image
+
+acha_meu_pet_core_breed:
+    resource: "@AchaMeuPetCoreBundle/Resources/config/routing/breed.yml"
+    prefix:   /breed
+
+acha_meu_pet_core_color:
+    resource: "@AchaMeuPetCoreBundle/Resources/config/routing/color.yml"
+    prefix:   /color
+
+acha_meu_pet_core_post:
+    resource: "@AchaMeuPetCoreBundle/Resources/config/routing/post.yml"
+    prefix:   /post
+
 acha_meu_pet_acha_meu_pet_core_homepage:
     path:     /
     defaults:

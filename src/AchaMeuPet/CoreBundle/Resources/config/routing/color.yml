@@ -1,0 +1,30 @@
+color:
+    path:     /
+    defaults: { _controller: "AchaMeuPetCoreBundle:Color:index" }
+
+color_show:
+    path:     /{id}/show
+    defaults: { _controller: "AchaMeuPetCoreBundle:Color:show" }
+
+color_new:
+    path:     /new
+    defaults: { _controller: "AchaMeuPetCoreBundle:Color:new" }
+
+color_create:
+    path:     /create
+    defaults: { _controller: "AchaMeuPetCoreBundle:Color:create" }
+    methods:  POST
+
+color_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AchaMeuPetCoreBundle:Color:edit" }
+
+color_update:
+    path:     /{id}/update
+    defaults: { _controller: "AchaMeuPetCoreBundle:Color:update" }
+    methods:  [POST, PUT]
+
+color_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AchaMeuPetCoreBundle:Color:delete" }
+    methods:  [POST, DELETE]

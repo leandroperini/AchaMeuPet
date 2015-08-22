@@ -48,7 +48,24 @@ assetic:
             node_paths: [%kernel.root_dir%/../vendor/nodejs/node_modules]
             apply_to: "\.less$"
         cssrewrite: ~
-        
+vich_uploader:
+    db_driver: orm
+    mappings:
+        breed_picture:
+            uri_prefix:         /images/breed/pictures
+            upload_destination: %kernel.root_dir%/../web/images/breed/pictures
+            namer:              vich_uploader.namer_origname 
+            inject_on_load:     true
+            delete_on_update:   true
+            delete_on_remove:   true
+        pet_picture:
+            uri_prefix:         /images/pet/pictures
+            upload_destination: %kernel.root_dir%/../web/images/pet/pictures
+            namer:              vich_uploader.namer_origname 
+            inject_on_load:     true
+            delete_on_update:   true
+            delete_on_remove:   true
+
 braincrafted_bootstrap:
     output_dir: bootstrap
     assets_dir: %kernel.root_dir%/../vendor/twbs/bootstrap

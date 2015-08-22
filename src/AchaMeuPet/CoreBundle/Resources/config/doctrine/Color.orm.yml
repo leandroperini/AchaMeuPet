@@ -1,4 +1,4 @@
-'AchaMeuPet\CoreBundle\Entity\Post':
+AchaMeuPet\CoreBundle\Entity\Color:
     type: entity
     table: null
     id:
@@ -8,10 +8,10 @@
             generator:
                 strategy: AUTO
     fields:
-        title:
+        name:
             type: string
             length: 255
-        body:
+        hexCode:
             type: string
             length: 255
     lifecycleCallbacks: {  }

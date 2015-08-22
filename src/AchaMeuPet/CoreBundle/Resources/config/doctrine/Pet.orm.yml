@@ -1,0 +1,33 @@
+'AchaMeuPet\CoreBundle\Entity\Pet':
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        breed:
+            type: integer
+        age:
+            type: integer
+        color:
+            type: integer
+        weight:
+            type: decimal
+        width:
+            type: decimal
+        height:
+            type: decimal
+        lostDate:
+            type: datetime
+        picture:
+            type: string
+            length: 255
+        updatedAt:
+            type: datetime
+    lifecycleCallbacks: {  }

@@ -1,4 +1,4 @@
-'AchaMeuPet\CoreBundle\Entity\Post':
+AchaMeuPet\CoreBundle\Entity\Image:
     type: entity
     table: null
     id:
@@ -11,7 +11,10 @@
         title:
             type: string
             length: 255
-        body:
+        alt:
+            type: string
+            length: 255
+        path:
             type: string
             length: 255
     lifecycleCallbacks: {  }
